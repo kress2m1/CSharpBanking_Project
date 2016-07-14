@@ -1,3 +1,4 @@
+DELETE ME AFTER PRACTICE
 14-07-2016
 # CSharpBanking_Project
 This is an ongoing project to develop my coding skills and to be 
