@@ -64,6 +64,7 @@ namespace UIAutomation.WebTest
         {
             string asdaTitle = _driver.Title;
             Assert.AreEqual("Asda.com - Online Food Shopping, George, & more".ToLower(), asdaTitle.ToLower());
+//            _driver.FindElement()
         }
 
         [TestMethod]
