@@ -22,12 +22,12 @@ namespace UIAutomation.WebTest
         {
             Console.WriteLine("These tasks must be run before the tests are run");
             _driver = new ChromeDriver();
-            _driver.Manage().Window.Maximize();    
+            _driver.Manage().Window.Maximize();  
+            _driver.Navigate().GoToUrl("http://www.asda.com");  
         }
 
         [TestMethod]
         [Owner("Andre Dada")]
-        [TestProperty("Browser", "Launch")]
         [TestCategory("SmokeTest")]
         public void LaunchBrowser()
         {
@@ -36,7 +36,6 @@ namespace UIAutomation.WebTest
          
         [TestMethod]
         [Owner("Andre Dada")]
-        [TestProperty("Login", "Username")]
         [TestCategory("SmokeTest")]
         public void LoginToTescoAccount()
         {
@@ -52,6 +51,5 @@ namespace UIAutomation.WebTest
             Console.WriteLine("These tasks must be run after the tests runs are completed");
             _driver.Quit();
         }
-
     }
 }
